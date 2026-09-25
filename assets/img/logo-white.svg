@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56" role="img" aria-label="AquaFix">
+  <defs>
+    <linearGradient id="drop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00b4d8"/>
+      <stop offset="1" stop-color="#1b13b9"/>
+    </linearGradient>
+  </defs>
+  <path d="M26 4C26 4 8 24 8 35a18 18 0 0 0 36 0C44 24 26 4 26 4z" fill="url(#drop)"/>
+  <path d="M15 36c4 3 8 3 11 0s7-3 11 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M15 43c4 3 8 3 11 0s7-3 11 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+  <text x="54" y="37" font-family="Oswald, Arial Narrow, sans-serif" font-size="30" font-weight="700" letter-spacing="1" fill="#ffffff">AQUA<tspan fill="#00b4d8">FIX</tspan></text>
+  <text x="55" y="51" font-family="Archivo, Arial, sans-serif" font-size="9" letter-spacing="2.2" fill="#cfd3ff">POOL &amp; WATER</text>
+</svg>

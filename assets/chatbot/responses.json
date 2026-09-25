@@ -1,0 +1,275 @@
+{
+  "greeting": {
+    "responses": [
+      "Hi! I'm the AquaFix assistant. I can help with pool equipment, water treatment, product advice and pool sizing. What do you need?",
+      "Hello! Ask me about our products, pool problems, or tell me your pool size and I'll size the equipment for you."
+    ],
+    "quickReplies": [
+      "Size my pool equipment",
+      "My pool is green",
+      "Opening hours",
+      "What do you sell?"
+    ]
+  },
+  "goodbye": {
+    "responses": [
+      "Goodbye! Enjoy your crystal clear water.",
+      "See you soon! Visit us in El Naame anytime."
+    ]
+  },
+  "thanks": {
+    "responses": [
+      "You're welcome! Anything else I can help with?",
+      "Happy to help! Let me know if you have more questions."
+    ]
+  },
+  "bot_identity": {
+    "responses": [
+      "I'm the AquaFix assistant, a small AI trained on AquaFix's products and pool knowledge. I can answer questions, recommend products, help with pool problems and size your pump and filter."
+    ],
+    "quickReplies": [
+      "Size my pool equipment",
+      "What do you sell?",
+      "My pool is cloudy"
+    ]
+  },
+  "hours": {
+    "responses": [
+      "We're open Monday to Saturday, 8:00 AM to 6:00 PM. Closed on Sunday."
+    ],
+    "quickReplies": [
+      "Where are you located?",
+      "Contact details"
+    ]
+  },
+  "location": {
+    "responses": [
+      "Our showroom is in El Naame, Mount Lebanon. You can find the map in the Contact section of this page."
+    ],
+    "link": {
+      "label": "Open map",
+      "href": "#contact"
+    },
+    "quickReplies": [
+      "Opening hours",
+      "Do you deliver?"
+    ]
+  },
+  "contact": {
+    "responses": [
+      "You can reach us by phone or WhatsApp, by email, or through the quote form on this page. We also post new products on Instagram @ets.eid."
+    ],
+    "link": {
+      "label": "Go to quote form",
+      "href": "#quote"
+    }
+  },
+  "delivery": {
+    "responses": [
+      "Yes, we deliver across Lebanon. Delivery time and cost depend on your area and order size. Send us your location through the quote form and we'll confirm."
+    ],
+    "link": {
+      "label": "Request delivery",
+      "href": "#quote"
+    }
+  },
+  "installation": {
+    "responses": [
+      "Yes, our team installs pumps, sand filters, pool lights, UV systems and home filtration. Tell us what you need and we'll arrange a visit."
+    ],
+    "link": {
+      "label": "Book installation",
+      "href": "#quote"
+    }
+  },
+  "maintenance_service": {
+    "responses": [
+      "Yes, we offer maintenance and repair for pumps, filters and water treatment systems, plus spare parts. Describe the problem in the quote form and our technician will contact you."
+    ],
+    "link": {
+      "label": "Request service",
+      "href": "#quote"
+    }
+  },
+  "brands": {
+    "responses": [
+      "We carry genuine products from Hayward, Pentair, Viqua, Donau Carbon, AWC and H.C.I, among others."
+    ],
+    "link": {
+      "label": "See products",
+      "href": "#products"
+    }
+  },
+  "products_overview": {
+    "responses": [
+      "We sell pool pumps, sand filters, LED pool lights, pool chemicals (chlorine, algaecide), home filtration (cartridges, housings, activated carbon) and UV sterilization systems. We also install and maintain them."
+    ],
+    "link": {
+      "label": "Browse products",
+      "href": "#products"
+    },
+    "quickReplies": [
+      "Size my pool equipment",
+      "Home water filtration",
+      "Chlorine"
+    ]
+  },
+  "price": {
+    "responses": [
+      "Prices depend on the model and size, and they change often, so we give them directly. Send your request through the quote form or WhatsApp and we'll reply with the latest price."
+    ],
+    "link": {
+      "label": "Ask for a price",
+      "href": "#quote"
+    }
+  },
+  "recommend_home_water": {
+    "responses": [
+      "For home water we usually recommend three stages: a sediment cartridge in a big blue housing to remove sand and rust, activated carbon for taste and odor, and a Viqua UV sterilizer to kill bacteria. Tell us your water source (well, tank, city) for exact advice."
+    ],
+    "link": {
+      "label": "See filtration products",
+      "href": "#products"
+    }
+  },
+  "recommend_commercial": {
+    "responses": [
+      "We supply hotels, resorts and contractors with bulk chemicals (50 kg chlorine drums, 20 kg carbon bags) and equipment for multiple pools. Send your project details through the quote form for bulk pricing."
+    ],
+    "link": {
+      "label": "Request bulk pricing",
+      "href": "#quote"
+    }
+  },
+  "product_chlorine": {
+    "responses": [
+      "We stock SDIC 63-G stabilized chlorine granular in buckets and 50 kg drums. It dissolves fast and works for daily disinfection and shock treatment."
+    ],
+    "link": {
+      "label": "See chlorine",
+      "href": "#products"
+    },
+    "quickReplies": [
+      "How much chlorine do I need?",
+      "My pool is green"
+    ]
+  },
+  "product_algaecide": {
+    "responses": [
+      "We have concentrated copper Algaecide 60 in 4 L bottles. Use it weekly as prevention and after shocking a green pool. Follow the dose on the label."
+    ],
+    "link": {
+      "label": "See algaecide",
+      "href": "#products"
+    }
+  },
+  "product_uv": {
+    "responses": [
+      "We sell Viqua Sterilight UV systems and replacement lamps. UV kills bacteria and viruses without chemicals. Always install it after a sediment filter so the water is clear."
+    ],
+    "link": {
+      "label": "See UV systems",
+      "href": "#products"
+    },
+    "quickReplies": [
+      "When to replace UV lamp?",
+      "Home water filtration"
+    ]
+  },
+  "product_home_filters": {
+    "responses": [
+      "We have Pentair polypropylene sediment cartridges, big blue filter housings and Donau activated carbon in 20 kg bags. Tell us your housing size (10 or 20 inch) to match the cartridge."
+    ],
+    "link": {
+      "label": "See filtration",
+      "href": "#products"
+    }
+  },
+  "product_pumps": {
+    "responses": [
+      "We stock Hayward Super II pool pumps and other models from 0.5 to 3 HP. The right size depends on your pool volume. Tell me your pool size and I'll calculate it."
+    ],
+    "link": {
+      "label": "See pumps",
+      "href": "#products"
+    },
+    "quickReplies": [
+      "Size my pool equipment"
+    ]
+  },
+  "product_sand_filter": {
+    "responses": [
+      "We sell pool sand filters from 400 to 900 mm with multiport valves, plus filter sand. The filter size depends on your pool volume. Want me to size it for you?"
+    ],
+    "link": {
+      "label": "See filters",
+      "href": "#products"
+    },
+    "quickReplies": [
+      "Size my pool equipment"
+    ]
+  },
+  "product_lights": {
+    "responses": [
+      "We have white and RGB color changing LED pool lights. As a rule, plan about one light per 20 m2 of water surface. Give me your pool size and I'll include lights in the plan."
+    ],
+    "link": {
+      "label": "See lights",
+      "href": "#products"
+    }
+  },
+  "problem_green_water": {
+    "responses": [
+      "Green water means algae, usually from low chlorine or weak filtration. 1) Brush walls and floor. 2) Shock with chlorine granular. 3) Add algaecide. 4) Run the filter 24 hours and backwash. 5) Keep chlorine at 1 to 3 ppm after. Want the chlorine dose for your pool size?"
+    ],
+    "quickReplies": [
+      "How much chlorine do I need?",
+      "Chlorine",
+      "Algaecide"
+    ]
+  },
+  "problem_cloudy_water": {
+    "responses": [
+      "Cloudy water is usually caused by poor filtration, high pH or low chlorine. Check pH (7.2 to 7.6) and chlorine, run the filter longer and backwash it. If the sand is more than 5 years old, it may need replacing."
+    ],
+    "quickReplies": [
+      "pH balance",
+      "Sand filter"
+    ]
+  },
+  "chlorine_dosing": {
+    "responses": [
+      "Keep free chlorine at 1 to 3 ppm. With SDIC granular, about 1.8 g per m3 raises chlorine by 1 ppm. Tell me your pool size (for example 8 x 4 x 1.5) and I'll calculate the starting dose. Always follow the product label."
+    ],
+    "action": "pool_sizing"
+  },
+  "ph_balance": {
+    "responses": [
+      "Keep pool pH between 7.2 and 7.6. High pH makes chlorine weak and water cloudy; low pH irritates eyes and corrodes equipment. Test 2 to 3 times a week with a test kit and adjust with pH minus or pH plus."
+    ]
+  },
+  "uv_lamp_replacement": {
+    "responses": [
+      "Replace the UV lamp every 12 months, even if it still lights up, because UV strength drops with time. Clean the quartz sleeve at the same time. We stock replacement lamps."
+    ],
+    "link": {
+      "label": "See UV lamps",
+      "href": "#products"
+    }
+  },
+  "pool_sizing": {
+    "responses": [
+      "Let's size it! Tell me your pool's length, width and average depth in meters (for example: 8 x 4 x 1.5), or the total volume in m3. For a round pool, give the diameter and depth."
+    ],
+    "action": "pool_sizing"
+  },
+  "out_of_scope": {
+    "responses": [
+      "Sorry, I can only help with pools, water treatment and AquaFix products. Try asking about pumps, filters, chlorine or your pool size."
+    ],
+    "quickReplies": [
+      "What do you sell?",
+      "Size my pool equipment"
+    ]
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "hey there", "hello there", "hi there", "good morning", "good afternoon", "good evening", "hiya", "yo", "greetings", "hello aquafix", "hi aquafix", "hey is anyone there", "anyone here", "hello can you help me", "hi i need some help", "morning", "good day", "howdy", "hey bot", "hi how are you", "hello how are you doing", "whats up"],
+      "responses": ["Hi! I'm the AquaFix assistant. I can help with pool equipment, water treatment, product advice and pool sizing. What do you need?", "Hello! Ask me about our products, pool problems, or tell me your pool size and I'll size the equipment for you."],
+      "quickReplies": ["Size my pool equipment", "My pool is green", "Opening hours", "What do you sell?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "see you later", "bye bye", "talk to you later", "i have to go", "gotta go", "thats all", "that is all for now", "ok bye", "cya", "later", "have a nice day", "good night", "see ya", "im done", "nothing else", "no thats it", "end chat"],
+      "responses": ["Goodbye! Enjoy your crystal clear water.", "See you soon! Visit us in El Naame anytime."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "thank you so much", "thanks a lot", "many thanks", "thx", "ty", "appreciate it", "that was helpful", "great thanks", "perfect thank you", "awesome thanks", "cool thanks", "you helped a lot", "thanks for the help", "much appreciated", "nice one thanks", "thank u", "ok thanks", "great help"],
+      "responses": ["You're welcome! Anything else I can help with?", "Happy to help! Let me know if you have more questions."]
+    },
+    {
+      "tag": "bot_identity",
+      "patterns": ["who are you", "what are you", "are you a robot", "are you human", "are you a bot", "what can you do", "what can you help me with", "how can you help", "is this a real person", "am i talking to a machine", "what is your name", "whats your name", "are you ai", "are you an artificial intelligence", "how do you work", "what do you know", "help", "what are your features", "can you answer questions", "who made you"],
+      "responses": ["I'm the AquaFix assistant, a small AI trained on AquaFix's products and pool knowledge. I can answer questions, recommend products, help with pool problems and size your pump and filter."],
+      "quickReplies": ["Size my pool equipment", "What do you sell?", "My pool is cloudy"]
+    },
+    {
+      "tag": "hours",
+      "patterns": ["what are your opening hours", "when are you open", "opening hours", "working hours", "what time do you open", "what time do you close", "are you open today", "are you open on sunday", "are you open saturday", "business hours", "when does the shop open", "when do you close", "hours of operation", "is the store open now", "what days are you open", "can i come tomorrow morning", "are you open on weekends", "schedule of the shop", "what time is the showroom open", "until what time are you open"],
+      "responses": ["We're open Monday to Saturday, 8:00 AM to 6:00 PM. Closed on Sunday."],
+      "quickReplies": ["Where are you located?", "Contact details"]
+    },
+    {
+      "tag": "location",
+      "patterns": ["where are you located", "where is your shop", "what is your address", "address", "location", "where can i find you", "how do i get to your store", "where is the showroom", "are you in beirut", "which area are you in", "directions to your shop", "send me your location", "where is aquafix", "do you have a physical store", "can i visit you", "google maps location", "where are you based", "what city are you in", "shop location please", "is your store in el naame"],
+      "responses": ["Our showroom is in El Naame, Mount Lebanon. You can find the map in the Contact section of this page."],
+      "link": { "label": "Open map", "href": "#contact" },
+      "quickReplies": ["Opening hours", "Do you deliver?"]
+    },
+    {
+      "tag": "contact",
+      "patterns": ["how can i contact you", "phone number", "what is your number", "can i call you", "whatsapp number", "do you have whatsapp", "email address", "what is your email", "contact details", "how to reach you", "i want to talk to someone", "can i speak to a person", "talk to a human", "customer service", "support number", "give me your phone", "how do i message you", "instagram account", "social media", "contact information"],
+      "responses": ["You can reach us by phone or WhatsApp, by email, or through the quote form on this page. We also post new products on Instagram @ets.eid."],
+      "link": { "label": "Go to quote form", "href": "#quote" }
+    },
+    {
+      "tag": "delivery",
+      "patterns": ["do you deliver", "delivery", "can you deliver to my house", "do you ship", "shipping", "do you deliver to beirut", "do you deliver outside mount lebanon", "how much is delivery", "delivery cost", "how long does delivery take", "can you send the order to me", "home delivery", "do you deliver to the south", "do you deliver to the north", "can i get it delivered", "delivery fees", "same day delivery", "do you deliver chemicals", "shipping all over lebanon", "when will my order arrive"],
+      "responses": ["Yes, we deliver across Lebanon. Delivery time and cost depend on your area and order size. Send us your location through the quote form and we'll confirm."],
+      "link": { "label": "Request delivery", "href": "#quote" }
+    },
+    {
+      "tag": "installation",
+      "patterns": ["do you install", "installation", "can you install a pump", "can you install my filter", "do you do installation", "who installs the equipment", "install pool lights", "can you install a uv system", "installation service", "do you send a technician", "can a technician come", "i need someone to install", "do you install water filters at home", "setup service", "can you connect the pump and filter", "installation cost", "do you install new pools equipment", "professional installation", "can you fit the equipment for me", "do you set up the system"],
+      "responses": ["Yes, our team installs pumps, sand filters, pool lights, UV systems and home filtration. Tell us what you need and we'll arrange a visit."],
+      "link": { "label": "Book installation", "href": "#quote" }
+    },
+    {
+      "tag": "maintenance_service",
+      "patterns": ["do you do maintenance", "pool maintenance", "can you maintain my pool", "repair service", "my pump is broken", "can you repair my pump", "my filter is leaking", "fix my pool equipment", "maintenance contract", "weekly pool service", "do you clean pools", "pool cleaning service", "my pump is making noise", "pump not working", "motor stopped working", "can you service my filter", "after sales service", "do you do repairs", "the pump is leaking water", "my equipment needs service"],
+      "responses": ["Yes, we offer maintenance and repair for pumps, filters and water treatment systems, plus spare parts. Describe the problem in the quote form and our technician will contact you."],
+      "link": { "label": "Request service", "href": "#quote" }
+    },
+    {
+      "tag": "brands",
+      "patterns": ["which brands do you have", "what brands do you sell", "do you sell hayward", "do you have pentair", "do you carry viqua", "brands", "are your products original", "are they genuine products", "is it original hayward", "what brand of pumps", "what brand of filters", "do you have italian brands", "quality of your products", "do you sell donau carbon", "which companies do you work with", "are you a hayward dealer", "do you have good brands", "original or copy", "what brand of uv", "trusted brands"],
+      "responses": ["We carry genuine products from Hayward, Pentair, Viqua, Donau Carbon, AWC and H.C.I, among others."],
+      "link": { "label": "See products", "href": "#products" }
+    },
+    {
+      "tag": "products_overview",
+      "patterns": ["what do you sell", "what products do you have", "products", "show me your products", "catalog", "what do you offer", "product list", "what items do you have", "what kind of products", "what is available", "do you have pool stuff", "i want to buy something for my pool", "what can i buy from you", "your services", "what services do you provide", "what does aquafix do", "what is your business", "do you sell pool equipment", "do you sell water treatment", "product range"],
+      "responses": ["We sell pool pumps, sand filters, LED pool lights, pool chemicals (chlorine, algaecide), home filtration (cartridges, housings, activated carbon) and UV sterilization systems. We also install and maintain them."],
+      "link": { "label": "Browse products", "href": "#products" },
+      "quickReplies": ["Size my pool equipment", "Home water filtration", "Chlorine"]
+    },
+    {
+      "tag": "price",
+      "patterns": ["how much", "price", "prices", "how much does it cost", "what is the price", "price list", "how much is the pump", "how much is chlorine", "cost of a sand filter", "how much for a uv system", "is it expensive", "do you have discounts", "any offers", "best price", "cheap pump", "how much is the algaecide", "price of pool lights", "how much for installation", "can you send me prices", "quote price"],
+      "responses": ["Prices depend on the model and size, and they change often, so we give them directly. Send your request through the quote form or WhatsApp and we'll reply with the latest price."],
+      "link": { "label": "Ask for a price", "href": "#quote" }
+    },
+    {
+      "tag": "recommend_home_water",
+      "patterns": ["i need a water filter for my house", "home water filter", "drinking water filter", "water at home is dirty", "my tap water has sand", "filter for my well water", "water tastes bad", "water smells like chlorine", "how do i get clean drinking water", "water filtration for home", "best filter for home", "i want to purify my water", "my water is yellow", "rust in my water", "water for kitchen", "filter for the whole house", "safe drinking water at home", "what do i need to filter my water", "water tank filter", "bacteria in my water at home"],
+      "responses": ["For home water we usually recommend three stages: a sediment cartridge in a big blue housing to remove sand and rust, activated carbon for taste and odor, and a Viqua UV sterilizer to kill bacteria. Tell us your water source (well, tank, city) for exact advice."],
+      "link": { "label": "See filtration products", "href": "#products" }
+    },
+    {
+      "tag": "recommend_commercial",
+      "patterns": ["i own a hotel", "equipment for a resort", "bulk order", "wholesale", "i am a contractor", "commercial pool", "large quantity of chlorine", "do you sell in bulk", "big order for a project", "supply for a hotel pool", "public pool equipment", "chemicals for multiple pools", "industrial water treatment", "factory water filtration", "bulk activated carbon", "50 kg chlorine", "price for resellers", "i am a pool company", "project supply", "commercial water treatment"],
+      "responses": ["We supply hotels, resorts and contractors with bulk chemicals (50 kg chlorine drums, 20 kg carbon bags) and equipment for multiple pools. Send your project details through the quote form for bulk pricing."],
+      "link": { "label": "Request bulk pricing", "href": "#quote" }
+    },
+    {
+      "tag": "product_chlorine",
+      "patterns": ["chlorine", "do you have chlorine", "chlorine granular", "chlorine tablets", "sdic", "pool chlorine", "which chlorine is best", "i need chlorine for my pool", "chlorine powder", "stabilized chlorine", "chlorine bucket", "chlorine 50 kg", "shock treatment", "pool shock", "do you sell chlorine granules", "fast dissolving chlorine", "chlorine 63", "disinfectant for pool", "sanitizer for swimming pool", "buy chlorine"],
+      "responses": ["We stock SDIC 63-G stabilized chlorine granular in buckets and 50 kg drums. It dissolves fast and works for daily disinfection and shock treatment."],
+      "link": { "label": "See chlorine", "href": "#products" },
+      "quickReplies": ["How much chlorine do I need?", "My pool is green"]
+    },
+    {
+      "tag": "product_algaecide",
+      "patterns": ["algaecide", "do you have algaecide", "anti algae", "algae killer", "copper algaecide", "algaecide 60", "something to stop algae", "product against algae", "algae prevention", "liquid against algae", "how to prevent algae", "algicide", "algae treatment product", "concentrated algaecide", "anti algae liquid", "algaecide price", "best algaecide for pool", "do i need algaecide", "algaecide dose", "algae chemical"],
+      "responses": ["We have concentrated copper Algaecide 60 in 4 L bottles. Use it weekly as prevention and after shocking a green pool. Follow the dose on the label."],
+      "link": { "label": "See algaecide", "href": "#products" }
+    },
+    {
+      "tag": "product_uv",
+      "patterns": ["uv system", "uv sterilizer", "uv lamp", "do you have uv", "viqua", "sterilight", "ultraviolet filter", "uv water treatment", "uv light for water", "uv disinfection", "kill bacteria without chemicals", "uv for drinking water", "uv system for home", "replacement uv bulb", "uv purifier", "uv for well water", "uv system price", "which uv do i need", "viqua sterilight s2q", "uv unit"],
+      "responses": ["We sell Viqua Sterilight UV systems and replacement lamps. UV kills bacteria and viruses without chemicals. Always install it after a sediment filter so the water is clear."],
+      "link": { "label": "See UV systems", "href": "#products" },
+      "quickReplies": ["When to replace UV lamp?", "Home water filtration"]
+    },
+    {
+      "tag": "product_home_filters",
+      "patterns": ["filter cartridge", "sediment filter", "pentair cartridge", "big blue housing", "filter housing", "activated carbon", "carbon filter", "donau carbon", "replacement cartridge", "pp cartridge", "polypropylene filter", "10 inch filter", "20 inch big blue", "carbon for water filter", "granular activated carbon", "carbon media", "cartridge for water filter", "do you have filter housings", "string wound cartridge", "5 micron cartridge"],
+      "responses": ["We have Pentair polypropylene sediment cartridges, big blue filter housings and Donau activated carbon in 20 kg bags. Tell us your housing size (10 or 20 inch) to match the cartridge."],
+      "link": { "label": "See filtration", "href": "#products" }
+    },
+    {
+      "tag": "product_pumps",
+      "patterns": ["pumps", "do you sell pumps", "pool pump", "hayward pump", "hayward super ii", "super 2 pump", "circulation pump", "pump for swimming pool", "do you have pumps in stock", "pump motor", "1 hp pump", "variable speed pump", "pump models", "strong pump", "which pumps do you have", "replacement pump", "pump brands", "self priming pump", "pool motor", "water pump for pool"],
+      "responses": ["We stock Hayward Super II pool pumps and other models from 0.5 to 3 HP. The right size depends on your pool volume. Tell me your pool size and I'll calculate it."],
+      "link": { "label": "See pumps", "href": "#products" },
+      "quickReplies": ["Size my pool equipment"]
+    },
+    {
+      "tag": "product_sand_filter",
+      "patterns": ["sand filter", "pool filter", "do you sell sand filters", "filter tank", "multiport valve", "filter sand", "silica sand", "filter for swimming pool", "top mount filter", "side mount filter", "sand for pool filter", "change filter sand", "backwash valve", "filter models", "hayward sand filter", "fiberglass filter", "filter media for pool", "glass media", "replacement sand", "filter with valve"],
+      "responses": ["We sell pool sand filters from 400 to 900 mm with multiport valves, plus filter sand. The filter size depends on your pool volume. Want me to size it for you?"],
+      "link": { "label": "See filters", "href": "#products" },
+      "quickReplies": ["Size my pool equipment"]
+    },
+    {
+      "tag": "product_lights",
+      "patterns": ["pool lights", "led lights", "underwater light", "rgb pool light", "color changing light", "pool lamp", "do you have lights for pool", "led pool lamp", "replace pool light", "night lights for pool", "white pool light", "colored lights", "light for swimming pool", "pool lighting", "waterproof lights", "par56 led", "light bulb for pool", "remote control pool lights", "wall mounted pool light", "how many lights do i need"],
+      "responses": ["We have white and RGB color changing LED pool lights. As a rule, plan about one light per 20 m2 of water surface. Give me your pool size and I'll include lights in the plan."],
+      "link": { "label": "See lights", "href": "#products" }
+    },
+    {
+      "tag": "problem_green_water",
+      "patterns": ["my pool is green", "green water", "pool turned green", "algae in my pool", "green algae", "water is green", "how to fix green pool", "pool has algae", "slimy walls", "green stains on pool walls", "pool water became green overnight", "black algae", "mustard algae", "how to clear green water", "algae keeps coming back", "pool looks like a swamp", "green and cloudy", "algae on the steps", "slippery pool floor", "pool is turning greenish"],
+      "responses": ["Green water means algae, usually from low chlorine or weak filtration. 1) Brush walls and floor. 2) Shock with chlorine granular. 3) Add algaecide. 4) Run the filter 24 hours and backwash. 5) Keep chlorine at 1 to 3 ppm after. Want the chlorine dose for your pool size?"],
+      "quickReplies": ["How much chlorine do I need?", "Chlorine", "Algaecide"]
+    },
+    {
+      "tag": "problem_cloudy_water",
+      "patterns": ["cloudy water", "my pool is cloudy", "milky water", "water is not clear", "hazy pool", "pool water is white", "dull water", "cant see the bottom", "water is murky", "pool not sparkling", "cloudy after shock", "why is my pool cloudy", "water turned milky", "blurry water", "dirty looking water", "pool is foggy", "cloudy blue water", "fix cloudy pool", "pool water not clean", "unclear water"],
+      "responses": ["Cloudy water is usually caused by poor filtration, high pH or low chlorine. Check pH (7.2 to 7.6) and chlorine, run the filter longer and backwash it. If the sand is more than 5 years old, it may need replacing."],
+      "quickReplies": ["pH balance", "Sand filter"]
+    },
+    {
+      "tag": "chlorine_dosing",
+      "patterns": ["how much chlorine do i need", "chlorine dose", "how much chlorine to add", "chlorine for my pool size", "how many grams of chlorine", "chlorine per cubic meter", "dosage of chlorine", "how often to add chlorine", "correct chlorine level", "ideal chlorine level", "what ppm should chlorine be", "too much chlorine", "chlorine level too low", "how much shock", "chlorine quantity", "how to use chlorine granular", "daily chlorine amount", "how much chlorine per week", "free chlorine level", "chlorine calculation"],
+      "responses": ["Keep free chlorine at 1 to 3 ppm. With SDIC granular, about 1.8 g per m3 raises chlorine by 1 ppm. Tell me your pool size (for example 8 x 4 x 1.5) and I'll calculate the starting dose. Always follow the product label."],
+      "action": "pool_sizing"
+    },
+    {
+      "tag": "ph_balance",
+      "patterns": ["ph", "ph level", "what should my ph be", "ph too high", "ph too low", "how to lower ph", "how to raise ph", "ph minus", "ph plus", "ph balance", "test ph", "ph test kit", "alkalinity", "water balance", "eyes burning in pool", "ph reducer", "ph increaser", "correct ph for pool", "ph keeps rising", "water chemistry"],
+      "responses": ["Keep pool pH between 7.2 and 7.6. High pH makes chlorine weak and water cloudy; low pH irritates eyes and corrodes equipment. Test 2 to 3 times a week with a test kit and adjust with pH minus or pH plus."]
+    },
+    {
+      "tag": "uv_lamp_replacement",
+      "patterns": ["when to replace uv lamp", "how often change uv bulb", "uv lamp life", "uv lamp is on but", "uv lamp still working", "replace uv lamp", "uv bulb lifetime", "how long does a uv lamp last", "uv lamp every year", "uv lamp alarm", "uv lamp expired", "change the uv light", "uv sleeve cleaning", "quartz sleeve", "uv not working", "uv light is off", "uv maintenance", "should i change my uv lamp", "uv replacement schedule", "uv lamp hours"],
+      "responses": ["Replace the UV lamp every 12 months, even if it still lights up, because UV strength drops with time. Clean the quartz sleeve at the same time. We stock replacement lamps."],
+      "link": { "label": "See UV lamps", "href": "#products" }
+    },
+    {
+      "tag": "pool_sizing",
+      "patterns": ["what pump do i need", "which pump for my pool", "what size filter do i need", "calculate filter size", "size my pool equipment", "what equipment do i need for my pool", "i am building a new pool", "new pool what do i need", "how big should my pump be", "pump size for my pool", "filter size for my pool", "my pool is 8 by 4", "my pool is 10x5", "pool 12 by 6 meters", "how many skimmers do i need", "what accessories do i need", "equipment for a new swimming pool", "pump and filter for 50 m3", "recommend pump and filter", "calculate my pool volume", "how many horsepower pump", "what hp pump for my pool", "which filter and pump", "my pool size is 60 cubic meters", "full equipment list for pool", "what do i need to buy for my pool", "round pool 5 meters diameter", "help me choose pump and filter", "size my pump", "how much water in my pool"],
+      "responses": ["Let's size it! Tell me your pool's length, width and average depth in meters (for example: 8 x 4 x 1.5), or the total volume in m3. For a round pool, give the diameter and depth."],
+      "action": "pool_sizing"
+    },
+    {
+      "tag": "out_of_scope",
+      "patterns": ["what is the weather today", "tell me a joke", "who won the football match", "what is the capital of france", "can you write my homework", "how to cook pasta", "recommend a movie", "what is bitcoin price", "who is the president", "play some music", "book me a flight", "what time is it", "translate this to spanish", "how old are you", "do you like pizza", "what is love", "sing a song", "solve this math problem", "latest news", "how to lose weight", "fix my car", "what is the meaning of life", "best phone to buy", "how to learn programming", "tell me about dinosaurs"],
+      "responses": ["Sorry, I can only help with pools, water treatment and AquaFix products. Try asking about pumps, filters, chlorine or your pool size."],
+      "quickReplies": ["What do you sell?", "Size my pool equipment"]
+    }
+  ]
+}

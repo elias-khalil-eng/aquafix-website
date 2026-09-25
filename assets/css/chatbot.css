@@ -1,0 +1,91 @@
+/* AquaFix chatbot widget, uses the color tokens from style.css */
+.cb-launcher {
+  position: fixed; right: 20px; bottom: 20px; z-index: 1001;
+  width: 60px; height: 60px; border-radius: 50%; border: 0;
+  background: linear-gradient(135deg, var(--primary), var(--aqua)); color: var(--white);
+  font-size: 26px; box-shadow: 0 10px 30px rgba(27, 19, 185, .35); transition: transform .3s;
+}
+.cb-launcher:hover { transform: scale(1.08); }
+.cb-launcher::after {
+  /* gentle ripple so visitors notice the assistant */
+  content: ""; position: absolute; inset: 0; border-radius: 50%; border: 2px solid var(--aqua);
+  animation: cbPulse 2.4s ease-out infinite;
+}
+.cb-open .cb-launcher::after { animation: none; }
+@keyframes cbPulse { from { transform: scale(1); opacity: .8; } to { transform: scale(1.6); opacity: 0; } }
+
+.cb-panel {
+  position: fixed; right: 20px; bottom: 92px; z-index: 1001;
+  width: 380px; max-width: calc(100vw - 32px); height: 580px; max-height: calc(100vh - 120px);
+  display: flex; flex-direction: column; background: var(--white);
+  border-radius: 18px; overflow: hidden; box-shadow: 0 25px 70px rgba(11, 10, 58, .3);
+  animation: cbIn .25s ease both;
+}
+.cb-panel[hidden] { display: none; }
+@keyframes cbIn { from { opacity: 0; transform: translateY(16px) scale(.98); } to { opacity: 1; transform: none; } }
+
+.cb-header {
+  display: flex; align-items: center; gap: 12px; padding: 16px 18px;
+  background: linear-gradient(135deg, var(--navy), var(--primary)); color: var(--white);
+}
+.cb-header h2 { color: var(--white); font-size: 18px; margin: 0; }
+.cb-header p { margin: 0; font-size: 12px; color: #cfd3ff; }
+.cb-avatar {
+  width: 42px; height: 42px; border-radius: 50%; background: rgba(255, 255, 255, .15);
+  display: flex; align-items: center; justify-content: center; font-size: 20px; color: var(--aqua);
+}
+.cb-close { margin-left: auto; background: none; border: 0; color: var(--white); font-size: 18px; opacity: .8; }
+.cb-close:hover { opacity: 1; }
+
+.cb-messages { flex: 1; overflow-y: auto; padding: 16px; background: var(--light-bg); display: flex; flex-direction: column; gap: 10px; }
+.cb-msg { max-width: 85%; padding: 10px 14px; border-radius: 16px; font-size: 14px; line-height: 1.5; white-space: pre-line; }
+.cb-bot { background: var(--white); color: var(--heading); border-bottom-left-radius: 4px; box-shadow: 0 2px 8px rgba(0, 0, 0, .05); align-self: flex-start; }
+.cb-user { background: var(--primary); color: var(--white); border-bottom-right-radius: 4px; align-self: flex-end; }
+.cb-link { display: inline-block; margin-top: 6px; font-weight: 600; font-size: 13px; }
+
+.cb-typing { display: flex; gap: 4px; padding: 14px; }
+.cb-typing span { width: 7px; height: 7px; border-radius: 50%; background: #b9bccf; animation: cbDot 1s infinite; }
+.cb-typing span:nth-child(2) { animation-delay: .15s; }
+.cb-typing span:nth-child(3) { animation-delay: .3s; }
+@keyframes cbDot { 0%, 60%, 100% { transform: translateY(0); } 30% { transform: translateY(-5px); } }
+
+.cb-quick { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 16px; background: var(--light-bg); }
+.cb-quick:not(:empty) { padding-bottom: 12px; }
+.cb-quick button {
+  border: 1px solid var(--primary); background: var(--white); color: var(--primary);
+  border-radius: 50px; padding: 5px 12px; font-size: 13px; transition: all .2s;
+}
+.cb-quick button:hover { background: var(--primary); color: var(--white); }
+
+.cb-form { display: flex; gap: 8px; padding: 12px; border-top: 1px solid #e3e6f3; }
+.cb-form input { flex: 1; border: 1px solid #e3e6f3; border-radius: 50px; padding: 10px 16px; font-size: 14px; outline: none; }
+.cb-form input:focus { border-color: var(--primary); }
+.cb-form button {
+  width: 42px; height: 42px; border-radius: 50%; border: 0; background: var(--primary); color: var(--white);
+}
+.cb-form button:hover { background: var(--aqua); }
+
+/* Pool plan card */
+.cb-bot:has(.cb-plan) { max-width: 95%; padding: 0; overflow: hidden; }
+.cb-plan { padding: 14px 16px; white-space: normal; }
+.cb-plan h3 { font-size: 18px; margin: 0; color: var(--primary); }
+.cb-plan-sub { margin: 0 0 8px; font-size: 13px; color: var(--text); }
+.cb-plan dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; margin: 0 0 8px; font-size: 13px; }
+.cb-plan dt { color: var(--text); font-weight: 400; }
+.cb-plan dd { margin: 0; font-weight: 600; }
+.cb-plan h4 { font-size: 14px; margin: 10px 0 2px; }
+.cb-plan h4 i { color: var(--aqua); }
+.cb-plan p { margin: 0; font-size: 13px; }
+.cb-plan ul { list-style: disc; padding-left: 18px; font-size: 13px; }
+.cb-plan-warn { background: #fff4e5; border-radius: 8px; padding: 8px 10px; margin-top: 8px !important; }
+.cb-plan-note { color: var(--text); font-size: 12px !important; margin-top: 10px !important; font-style: italic; }
+.cb-plan-btn {
+  display: block; text-align: center; margin-top: 12px; padding: 9px; border-radius: 50px;
+  background: var(--primary); color: var(--white); font-family: "Oswald", sans-serif; text-transform: uppercase; font-size: 14px;
+}
+.cb-plan-btn:hover { background: var(--aqua); color: var(--white); }
+
+@media (max-width: 575px) {
+  .cb-panel { right: 16px; bottom: 88px; height: calc(100vh - 110px); }
+  .cb-launcher { right: 16px; bottom: 16px; }
+}

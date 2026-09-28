@@ -1,10 +1,21 @@
 # AquaFix Website
 
-One-page website for **AquaFix (ETS Eid)**, a pool equipment and water treatment shop in El Naame, Mount Lebanon. Built as a senior project.
+[![Tests](https://github.com/elias-khalil-eng/aquafix-website/actions/workflows/test.yml/badge.svg)](https://github.com/elias-khalil-eng/aquafix-website/actions/workflows/test.yml)
+
+One-page website for **AquaFix (ETS Eid)**, a pool equipment and water treatment shop in El Naame, Mount Lebanon, with an AI chatbot that runs fully in the browser. Built as a senior project.
+
+Live site: https://elias-khalil-eng.github.io/aquafix-website/
+
+![AquaFix homepage](docs/screenshot.jpg)
 
 Layout is based on the Pizi pool services template. Product photos come from the business Instagram [@ets.eid](https://www.instagram.com/ets.eid/).
 
-Live site: https://elias-khalil-eng.github.io/aquafix-website/
+## Tech Stack
+
+- HTML, CSS, JavaScript, Bootstrap 5
+- Chatbot: PyTorch for training, plain JavaScript for inference (no server, no paid API)
+- Tests: Node.js built-in test runner, run on GitHub Actions
+- Hosting: GitHub Pages
 
 ## Run locally
 

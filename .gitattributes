@@ -1,0 +1,2 @@
+# Keep the language bar on the website code, not the training report
+*.ipynb linguist-documentation

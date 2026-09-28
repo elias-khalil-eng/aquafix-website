@@ -60,3 +60,8 @@ Checks the pool calculator and that the browser model gives the same probabiliti
 ## To do
 
 - Replace placeholder phone, email and WhatsApp number (`CONTACT` in `assets/js/main.js`)
+
+## License
+
+Code is released under the [MIT License](LICENSE). The template layout, brand
+name and product photos belong to their respective owners.
